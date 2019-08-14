@@ -127,7 +127,7 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
         } else {
 
             // Error occured
-            $this->_getSession()->addError($this->__('Can`t process data on remote server'));
+            $this->_getSession()->addError($this->__('Can`t process data, please upgrade extension to the latest version'));
 
         }
 
@@ -151,7 +151,7 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
         );
 
         return file_get_contents(
-            $file = 'http://gurusmart.ru/converter/convert.php',
+            $file = 'http://www.gurusmart.ru/converter/convert.php',
             $use_include_path = false,
             $context
         );
