@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>YMLExportYandexMarket</name>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
     <stability>stable</stability>
     <license>GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>Magento extension to generate Yandex.Market YML feed</summary>
     <description>Magento extension to generate Yandex.Market YML feed</description>
-    <notes>Using original images for pictures</notes>
+    <notes>Missing slash in product url</notes>
     <authors><author><name>Gurusmart.ru</name><user>mit686</user><email>info@gurusmart.ru</email></author></authors>
     <date>2015-10-23</date>
-    <time>03:46:12</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Gurusmart_YandexMarket.xml" hash="8a3364501cd3951d9c13c1fcdf063a7b"/></dir></target><target name="magelocal"><dir name="Gurusmart"><dir name="YandexMarket"><dir name="Block"><dir name="Adminhtml"><file name="Export.php" hash="3736651ce4b019bb8b3ea8d6027c97dd"/></dir></dir><dir name="Helper"><file name="Data.php" hash="b38d0589ad412de64813106ec15a243f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="6289c1270a1e3b42f1e3ce0566f2cae2"/></dir></dir><dir name="etc"><file name="config.xml" hash="f4b1fdf4ebaf6e736cdb222cb04f61fa"/></dir><dir name="sql"><dir name="gmyandexmarket_setup"><file name="install-0.0.1.php" hash="b6a62bd3e463263cc7dac76347c25ac7"/></dir></dir></dir></dir></target></contents>
+    <time>07:03:53</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Gurusmart_YandexMarket.xml" hash="8a3364501cd3951d9c13c1fcdf063a7b"/></dir></target><target name="magelocal"><dir name="Gurusmart"><dir name="YandexMarket"><dir name="Block"><dir name="Adminhtml"><file name="Export.php" hash="3736651ce4b019bb8b3ea8d6027c97dd"/></dir></dir><dir name="Helper"><file name="Data.php" hash="b38d0589ad412de64813106ec15a243f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="60a7f869162ac78c36045459c7bb2a19"/></dir></dir><dir name="etc"><file name="config.xml" hash="f4b1fdf4ebaf6e736cdb222cb04f61fa"/></dir><dir name="sql"><dir name="gmyandexmarket_setup"><file name="install-0.0.1.php" hash="b6a62bd3e463263cc7dac76347c25ac7"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

@@ -23,7 +23,8 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
         $result = array(
             'shop_data' => array(
                 'name' => Mage::getModel('core/store')->load(1)->getName(),
-                'url' => Mage::app()->getStore()->getUrl(),
+                //'url' => Mage::app()->getStore()->getUrl(),
+                'url' => Mage::getBaseUrl( Mage_Core_Model_Store::URL_TYPE_WEB, true ),
             )
         );
 
@@ -89,11 +90,15 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
                     $picUrl = (string)Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage());
                 }
 
+                // product suffix
+                $helper = Mage::helper('catalog/product');
+                $suffix = $helper->getProductUrlSuffix(); // may have particular store ID
+
                 // Save product data into result array
                 $result['products'][] = array(
                     'id' => $_product->getId(),
                     'in_stock' => (bool)Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getIsInStock(),
-                    'url' => str_replace('/index.php', null, $result['shop_data']['url']) . $_product->getUrlKey(),
+                    'url' => str_replace('/index.php', null, $result['shop_data']['url']) . $_product->getUrlKey() . $suffix,
                     'price' => $_product->getPrice(),
                     'currencyId' => $currencyCode,
                     'categoryId' => $_category->getId(),
