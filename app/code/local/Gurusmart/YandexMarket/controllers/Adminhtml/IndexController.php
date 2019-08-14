@@ -62,15 +62,7 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
             );
 
             // Get products collection and add attributes to select
-            $products = $_category->getProductCollection()
-            ->joinField(
-                'qty',
-                'cataloginventory/stock_item',
-                'qty',
-                'product_id=entity_id',
-                '{{table}}.stock_id=1',
-                'left'
-            );
+            $products = $_category->getProductCollection();
             foreach ($attributesToSelect as $ats) {
                 $products->addAttributeToSelect($ats);
             }
@@ -99,7 +91,7 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
                 // Save product data into result array
                 $result['products'][] = array(
                     'id' => $_product->getId(),
-                    'qty' => $_product->getQty(),
+                    'in_stock' => (bool)Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getIsInStock(),
                     'url' => str_replace('/index.php', null, $result['shop_data']['url']) . $_product->getUrlKey(),
                     'price' => $_product->getPrice(),
                     'currencyId' => $currencyCode,
