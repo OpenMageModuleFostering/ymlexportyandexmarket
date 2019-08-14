@@ -85,7 +85,8 @@ class Gurusmart_YandexMarket_Adminhtml_IndexController extends Mage_Adminhtml_Co
                 if ($image === 'no_selection') {
                     $picUrl = null;
                 } else {
-                    $picUrl = (string)Mage::helper('catalog/image')->init($_product, 'image')->resize(210);
+                    //$picUrl = (string)Mage::helper('catalog/image')->init($_product, 'image')->resize(210);
+                    $picUrl = (string)Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage());
                 }
 
                 // Save product data into result array
