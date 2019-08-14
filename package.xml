@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>YMLExportYandexMarket</name>
+    <version>1.0.0.0</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Magento extension to generate Yandex.Market YML feed</summary>
+    <description>Magento extension to generate Yandex.Market YML feed</description>
+    <notes>1. &#x412;&#x44B;&#x433;&#x440;&#x443;&#x437;&#x43A;&#x430; &#x442;&#x43E;&#x432;&#x430;&#x440;&#x43E;&#x432;: System -&gt; Import/Export -&gt; Yandex Market&#xD;
+2. &#x414;&#x43B;&#x44F; &#x432;&#x44B;&#x431;&#x43E;&#x440;&#x43E;&#x447;&#x43D;&#x43E;&#x439; &#x432;&#x44B;&#x433;&#x440;&#x443;&#x437;&#x43A;&#x438; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x442;&#x44C; "Export only marked"&#xD;
+3. products.xml &#x431;&#x443;&#x434;&#x435;&#x442; &#x441;&#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D; &#x432; &#x43A;&#x43E;&#x440;&#x43D;&#x435;&#x432;&#x43E;&#x439; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x438;</notes>
+    <authors><author><name>Gurusmart.ru</name><user>mit686</user><email>info@gurusmart.ru</email></author></authors>
+    <date>2014-05-23</date>
+    <time>17:29:30</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Gurusmart_YandexMarket.xml" hash="8a3364501cd3951d9c13c1fcdf063a7b"/></dir></target><target name="magelocal"><dir name="Gurusmart"><dir name="YandexMarket"><dir name="Block"><dir name="Adminhtml"><file name="Export.php" hash="3736651ce4b019bb8b3ea8d6027c97dd"/></dir></dir><dir name="Helper"><file name="Data.php" hash="b38d0589ad412de64813106ec15a243f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="df6d3a6c0fa592158833776601e09d6d"/></dir></dir><dir name="etc"><file name="config.xml" hash="f4b1fdf4ebaf6e736cdb222cb04f61fa"/></dir><dir name="sql"><dir name="gmyandexmarket_setup"><file name="install-0.0.1.php" hash="b6a62bd3e463263cc7dac76347c25ac7"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
