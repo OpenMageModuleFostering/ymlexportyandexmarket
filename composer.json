@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/YMLExportYandexMarket",
+    "name": "OpenMageModuleFostering\/YMLExportYandexMarket",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Magento extension to generate Yandex.Market YML feed",
     "authors": [
-    {
-        "name": "Gurusmart.ru",
-        "email": "info@gurusmart.ru"
-    }
-],
+        {
+            "name": "Gurusmart.ru",
+            "email": "info@gurusmart.ru"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
